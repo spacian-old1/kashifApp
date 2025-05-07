@@ -1,8 +1,8 @@
 <?php
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "videos";
+$hostname = "appinst.mysql.database.azure.comt";
+$username = "kashif";
+$password = "Myapp-123";
+$dbname = "appinst";
 
 // Connection to database
 $conn = mysqli_connect($hostname, $username, $password, $dbname)

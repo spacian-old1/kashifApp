@@ -2,10 +2,10 @@
 
 //variables
 
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "videos";
+$hostname = "appinst.mysql.database.azure.comt";
+$username = "kashif";
+$password = "Myapp-123";
+$dbname = "appinst";
 
 //connection
 

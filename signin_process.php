@@ -2,10 +2,10 @@
 
 session_start();
 
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "videos1";
+$hostname = "appinst.mysql.database.azure.comt";
+$username = "kashif";
+$password = "Myapp-123";
+$dbname = "appinst";
 
 // Connection
 $conn = mysqli_connect($hostname, $username, $password, $dbname)

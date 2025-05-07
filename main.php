@@ -1,9 +1,9 @@
 <?php
 // Database connection details
-$hostname = "sahrjeelmysql.mysql.database.azure.com";
-$username = "sharjeel";
-$password = "Sa1234567";
-$dbname = "netflix";
+$hostname = "appinst.mysql.database.azure.comt";
+$username = "kashif";
+$password = "Myapp-123";
+$dbname = "appinst";
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $dbname);

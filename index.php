@@ -8,12 +8,19 @@ if (isset($_SESSION['message'])) {
 }
 
 // Database connection
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "videos1";
+$hostname = "appinst.mysql.database.azure.com";
+$username = "kashif";
+$password = "Myapp-123";
+$dbname = "appinst";
+$ssl_ca = "./DigiCertTLSECCP384RootG5.crt.pem";
 
-$conn = mysqli_connect($hostname, $username, $password, $dbname);
+// $conn = mysqli_connect($hostname, $username, $password, $dbname);
+
+$conn = mysqli_init();
+mysqli_ssl_set($conn, NULL, NULL, $ssl_ca, NULL, NULL);
+mysqli_real_connect($conn, $hostname, $username, $password, $dbname);
+
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
